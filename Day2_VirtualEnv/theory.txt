@@ -1,0 +1,34 @@
+Virtual env - to isolate your project inorder to secure your project dependices or version we will create this virtual env
+
+venv- default virtualenv provide by django
+
+
+
+steps in creating Virtual enviorment
+
+stepp 1: open the command prompt
+step 2: navigate to your current directory
+step 3: Pip install virtualenv
+step 4: creating the virtualenv name
+        virtualenv name_virtualenv(mycls)
+                        or 
+         you can also use the default env provide by djano without any installations
+         python -m venev name_virtualenv
+
+step 5: cd mycls then cd Scripts
+step 6: activate
+step 7: code . to connect wit your visualstudios
+
+
+Now creating the project
+open a folder 
+step1 : install django - pip install django
+step2 : django-admin --version
+step 3: django-admin startproject project_name
+        django-admin startproject mypro
+step 4: django-admin startapp app_name
+        django-admin startapp myapp
+step 5: from thr project folder run the server
+        python manage.py runserver
+
+

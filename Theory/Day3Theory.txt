@@ -1,0 +1,42 @@
+Pip install vitualenv
+virtualenv myenv
+cd Scripts
+activate
+cd..
+cd..
+pip install django
+django-admin startproject myproject
+django-admin startapp myapp
+        or
+python manage.py startapp myapp
+
+
+python manage.py runserver - to run the server
+
+
+from django.HttpsResponse import HttpsResponse
+
+
+
+
+projectStructre -
+setting.py
+manag.py
+db.sqlite3
+__init__.py
+wsgi.py
+asgi.py
+urls.py
+
+
+app structure
+views.py
+models.py
+tests.py
+admin.py
+apps.py
+
+
+
+
+

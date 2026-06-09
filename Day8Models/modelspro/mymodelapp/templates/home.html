@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+    <h1>Employee details</h1>
+     {% for emp in emp_data %}
+
+     <h2>Employee Name : {{emp.name}}</h2>
+     <p>Age : {{emp.age}}</p>
+     <p>Date_of_Joining: {{emp.date_joining}}</p>
+     <p>Salary: {{emp.salary}}</p>
+     <p>Mode : {{emp.work_mode}}</p>
+      <hr>
+     {% endfor %}
+    
+</body>
+</html>

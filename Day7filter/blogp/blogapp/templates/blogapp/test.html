@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+
+    <h1>This is my test views</h1>
+    <p>Btach_name : {{name|capfirst}}</p>
+    <p>Course_name : {{course|default:"fullstack"|upper}}</p>
+    <p>Staus_course : {{status|truncatechars:"5"}}</p>
+    <p>Total_Marks : {{marks|last}}</p>
+    <p>Length_course : {{duration|add:'2'}}</p>
+    <h3>Todays_time : {{mydate|date:'d-m-Y'}}</h3>
+    
+</body>
+</html>

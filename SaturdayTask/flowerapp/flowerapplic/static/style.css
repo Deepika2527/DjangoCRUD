@@ -1,0 +1,30 @@
+body{
+    transition: 0.5s;
+}
+
+img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+/* Image Hover */
+
+img:hover{
+    transform: scale(1.03);
+}
+
+/* Button */
+
+.btn-success{
+    transition: 0.5s;
+}
+
+/* Button Hover */
+
+.btn-success:hover{
+    background-color: orange !important;
+    border-color: orange !important;
+    transform: translateY(-5px);
+}
