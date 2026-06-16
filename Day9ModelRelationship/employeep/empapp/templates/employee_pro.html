@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <h1>Project Details</h1>
+    {% for emp in projects %}
+    <p>{{emp.name}}</p>
+    <p>{{emp.emp_id}}</p>
+    <p>Projects</p>
+     <ul>
+        {% for proj in emp.project.all %}
+        <li>{{proj.project_name}}</li>
+        {% empty %}
+        <li>Currently no projects</li>
+        <li>{{proj.technlogies}}</li>
+        {% endfor %}
+        
+     </ul>
+
+
+
+    {% endfor %}
+
+
+    
+</body>
+</html>

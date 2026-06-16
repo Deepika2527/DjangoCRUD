@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+</head>
+<body>
+    <h1>Employee Skills</h1>
+    {% for skillset in empskills%}
+    <h2>Employee_name : {{skillset.name}} - {{skillset.id}}</h2>
+    <p>Skills:</p>
+    {% for empskill in skillset.skills.all%}
+     <li>{{empskill.skills}}</li>
+     {% empty %}
+     <li> <b>Fresher</b></li>
+     {% endfor %}
+    {% endfor %}
+    
+</body>
+</html>
